@@ -1,0 +1,188 @@
+{
+  "ingestion": {
+    "assets": 17,
+    "outcomes": {
+      "accept": 9,
+      "reference_only": 3,
+      "reject": 2,
+      "human_review": 1,
+      "quarantine": 2
+    },
+    "mean_trust_of_accepted": 0.95
+  },
+  "golden_set": {
+    "cases": 9,
+    "passed": 9,
+    "pass_rate": 1.0,
+    "failures_by_layer": {}
+  },
+  "cases": [
+    {
+      "id": "G1-current-requirement",
+      "question": "What are the acceptance criteria for roadside claim intake?",
+      "expected": "answer",
+      "decision": "answer",
+      "citations": [
+        "RC-231",
+        "PRD-INTAKE-V3"
+      ],
+      "missing": [],
+      "trace": {
+        "chunks_total": 45,
+        "after_prefilter": 24,
+        "after_search_and_expand": 13,
+        "after_rerank": 5
+      },
+      "result": "pass"
+    },
+    {
+      "id": "G2-current-policy",
+      "question": "What is the towing limit?",
+      "expected": "answer",
+      "decision": "answer",
+      "citations": [
+        "POL-ROADSIDE-ADD-A",
+        "POL-ROADSIDE-V2"
+      ],
+      "missing": [],
+      "trace": {
+        "chunks_total": 45,
+        "after_prefilter": 24,
+        "after_search_and_expand": 8,
+        "after_rerank": 5
+      },
+      "result": "pass"
+    },
+    {
+      "id": "G3-policy-as-of-2024",
+      "question": "What is the towing limit?",
+      "expected": "answer",
+      "decision": "answer",
+      "citations": [
+        "POL-ROADSIDE-V1"
+      ],
+      "missing": [],
+      "trace": {
+        "chunks_total": 45,
+        "after_prefilter": 11,
+        "after_search_and_expand": 3,
+        "after_rerank": 3
+      },
+      "result": "pass"
+    },
+    {
+      "id": "G4-access-denied",
+      "question": "What is the staff incentive rate?",
+      "expected": "abstain",
+      "decision": "abstain",
+      "citations": [],
+      "missing": [
+        "staff",
+        "incentive",
+        "rate"
+      ],
+      "trace": {
+        "chunks_total": 45,
+        "after_prefilter": 24,
+        "after_search_and_expand": 0,
+        "after_rerank": 0
+      },
+      "result": "pass"
+    },
+    {
+      "id": "G5-access-allowed",
+      "question": "What is the staff incentive rate?",
+      "expected": "answer",
+      "decision": "answer",
+      "citations": [
+        "POL-STAFF-INCENTIVE"
+      ],
+      "missing": [],
+      "trace": {
+        "chunks_total": 45,
+        "after_prefilter": 4,
+        "after_search_and_expand": 4,
+        "after_rerank": 4
+      },
+      "result": "pass"
+    },
+    {
+      "id": "G6-partial-evidence",
+      "question": "What is the payment rule for roadside claims?",
+      "expected": "answer_with_gap",
+      "decision": "answer_with_gap",
+      "citations": [
+        "PRD-INTAKE-V3",
+        "RC-231"
+      ],
+      "missing": [
+        "payment",
+        "rule"
+      ],
+      "trace": {
+        "chunks_total": 45,
+        "after_prefilter": 24,
+        "after_search_and_expand": 14,
+        "after_rerank": 5
+      },
+      "result": "pass"
+    },
+    {
+      "id": "G7-not-in-knowledge",
+      "question": "What is the drone delivery policy?",
+      "expected": "abstain",
+      "decision": "abstain",
+      "citations": [],
+      "missing": [
+        "drone",
+        "delivery"
+      ],
+      "trace": {
+        "chunks_total": 45,
+        "after_prefilter": 24,
+        "after_search_and_expand": 8,
+        "after_rerank": 5
+      },
+      "result": "pass"
+    },
+    {
+      "id": "G8-quarantined-source",
+      "question": "Which API key does the legacy export job use?",
+      "expected": "abstain",
+      "decision": "abstain",
+      "citations": [],
+      "missing": [
+        "api",
+        "key",
+        "legacy",
+        "export",
+        "job"
+      ],
+      "trace": {
+        "chunks_total": 45,
+        "after_prefilter": 24,
+        "after_search_and_expand": 0,
+        "after_rerank": 0
+      },
+      "result": "pass"
+    },
+    {
+      "id": "G9-meeting-decision",
+      "question": "What was decided about intake photos in the claims sync?",
+      "expected": "answer",
+      "decision": "answer",
+      "citations": [
+        "MEET-2026-10-02",
+        "PRD-INTAKE-V3"
+      ],
+      "missing": [],
+      "trace": {
+        "chunks_total": 45,
+        "after_prefilter": 24,
+        "after_search_and_expand": 14,
+        "after_rerank": 5
+      },
+      "result": "pass"
+    }
+  ]
+}

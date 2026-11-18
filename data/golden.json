@@ -1,0 +1,11 @@
+[
+ {"id": "G1-current-requirement", "question": "What are the acceptance criteria for roadside claim intake?", "roles": ["employee", "claims"], "as_of": "2026-11-18", "expect": "answer", "expect_sources": ["RC-231", "PRD-INTAKE-V3"], "must_not_cite": ["PRD-INTAKE-V2", "PRD-INTAKE-V3-COPY"]},
+ {"id": "G2-current-policy", "question": "What is the towing limit?", "roles": ["employee", "claims"], "as_of": "2026-11-18", "expect": "answer", "expect_sources": ["POL-ROADSIDE-V2"], "must_not_cite": ["POL-ROADSIDE-V1", "POL-REGIONAL-MEMO", "POL-ROADSIDE-DRAFT"]},
+ {"id": "G3-policy-as-of-2024", "question": "What is the towing limit?", "roles": ["employee", "claims"], "as_of": "2024-06-01", "expect": "answer", "expect_sources": ["POL-ROADSIDE-V1"], "must_not_cite": ["POL-ROADSIDE-V2"]},
+ {"id": "G4-access-denied", "question": "What is the staff incentive rate?", "roles": ["employee", "claims"], "as_of": "2026-11-18", "expect": "abstain", "must_not_cite": ["POL-STAFF-INCENTIVE"]},
+ {"id": "G5-access-allowed", "question": "What is the staff incentive rate?", "roles": ["hr"], "as_of": "2026-11-18", "expect": "answer", "expect_sources": ["POL-STAFF-INCENTIVE"]},
+ {"id": "G6-partial-evidence", "question": "What is the payment rule for roadside claims?", "roles": ["employee", "claims"], "as_of": "2026-11-18", "expect": "answer_with_gap"},
+ {"id": "G7-not-in-knowledge", "question": "What is the drone delivery policy?", "roles": ["employee", "claims"], "as_of": "2026-11-18", "expect": "abstain"},
+ {"id": "G8-quarantined-source", "question": "Which API key does the legacy export job use?", "roles": ["employee", "claims"], "as_of": "2026-11-18", "expect": "abstain", "must_not_cite": ["REPO-LEGACY-EXPORT"]},
+ {"id": "G9-meeting-decision", "question": "What was decided about intake photos in the claims sync?", "roles": ["employee", "claims"], "as_of": "2026-11-18", "expect": "answer", "expect_sources": ["MEET-2026-10-02"]}
+]

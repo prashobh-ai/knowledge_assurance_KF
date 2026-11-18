@@ -1,0 +1,6 @@
+{"key": "RC-231", "summary": "Roadside claim intake form", "epic": "RC-200", "fix_version": "2026.3",
+ "labels": ["claims-intake", "roadside"],
+ "description": "As a member I want to raise a roadside claim from my phone so that help reaches me faster.",
+ "acceptance_criteria": ["Member can submit a roadside claim intake form with location and vehicle details.",
+  "Intake form asks for at least two photos of the vehicle before submission.",
+  "Member sees a claim reference number within five seconds of submission."]}

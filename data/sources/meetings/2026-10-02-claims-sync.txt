@@ -1,0 +1,7 @@
+Claims sync, weekly meeting
+
+[00:40] Meera: We reviewed the pilot results for the roadside claim intake form in the mobile app.
+
+[02:10] Arun: The team decided that intake photos are mandatory for every tow request from the next release.
+
+[04:25] Meera: Advisors will get a short guide before the change goes live.
