@@ -2,6 +2,8 @@ name: Knowledge Fabric PoC
 
 on:
   push:
+    paths-ignore:
+      - 'docs/**'
   workflow_dispatch:
 
 jobs:
